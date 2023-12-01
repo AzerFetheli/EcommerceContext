@@ -1,0 +1,77 @@
+.headerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headerFlex div form input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.headerFlex div i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.relative {
+    position: relative;
+    overflow: visible !important;
+}
+.relative span {
+    position: absolute;
+    top: 0;
+    right: -25%;
+}
+.sideBar {
+    z-index: 999;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 0.5s;
+}
+.sideBar.active {
+    right: 0%;
+    transition: 0.5s;
+    background-color: aliceblue;
+    height: 500px;
+    overflow: auto;
+}
+.sideBar.active::-webkit-scrollbar {
+    display: none;
+}
+.basketDiv {
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    height: 150px;
+}
+.basketDiv img {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+.basketDiv h1 {
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+}
+.basketDiv p{
+    position: absolute;
+    top: 15%;
+    left: 27%;
+}
+.basketDiv button{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.littleCardParent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
